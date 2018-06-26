@@ -5,14 +5,16 @@ You may assume that each input would have exactly one solution, and you may not 
 
 Example:
 
-`Given nums = [2, 7, 11, 15], target = 9,
+```
+ Given nums = [2, 7, 11, 15], target = 9,
  
  Because nums[0] + nums[1] = 2 + 7 = 9,
- <br>
- return [0, 1].`
+ return [0, 1].
+ ```
  
  ##第一次尝试，暴力破解
- `class Solution {
+ ```java
+ class Solution {
       public int[] twoSum(int[] nums, int target) {
           int[] result = new int[2];
           for(int i = 0; i < nums.length - 1; i++) {
@@ -26,7 +28,8 @@ Example:
           }
           return result;
       }
-  }`
+  }
+  ```
 #Review
 #Tip
 #share
