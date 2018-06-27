@@ -32,6 +32,25 @@ You may assume that each input would have exactly one solution, and you may not 
       }
   }
   ```
+  使用下下标遍历数组，算法复杂度为O(n^2)
+  
+## 第二次，参照答案
+```java
+class Solution {
+    public int[] twoSum(int[] nums, int target) {
+        int[] result = new int[2];
+        Map<Integer,Integer> map = new HashMap<>();
+        for (int i = 0; i < nums.length; i++) {
+            if (map.containsKey(target - nums[i])) {
+                return new int[]{map.get(target - nums[i]), i};
+            }
+            map.put(nums[i], i);
+        }
+        return result;
+    }
+}
+```
+使用map，key为数值，value为数组下标。用HashMap高效的搜索，将复杂度下降为O(n)
 # Review
 # Tip
 # share
