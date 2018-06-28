@@ -54,3 +54,19 @@ class Solution {
 # Review
 # Tip
 # share
+## 分享本周解决的一个maven打包问题
+dependency的scope是system的，依赖不会传递。例如本地项目的common包pom.xml中有如下配置：
+```xml
+<dependency>
+    <groupId>comet4j-tomcat7</groupId>
+    <artifactId>comet4j-tomcat7</artifactId>
+    <version>1.0</version>
+    <scope>system</scope>
+    <systemPath>${basedir}/src/main/resources/lib/comet4j-tomcat7.jar</systemPath>
+</dependency>
+```
+另外一个项目引入common的依赖，但是不会自动引入comet4j-tomcat7.jar这个jar包的。  
+## 解决方案
+将第三方jar包上传至nexus，去掉原项目中dependency的scope。
+## jar包上传至nexus
+用mvn **deploy:deploy-file**命令将jar包传至nexus的repositories/releases目录下，但是maven打包是从/groups/public/目录下取文件。jar包deploy成功后nexus的Public仓库并没有刚才上传成功的jar包，原因还未找到。后来在nexus的管理界面将jar包上传至3rd party中，问题解决。
