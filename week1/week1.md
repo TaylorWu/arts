@@ -52,7 +52,13 @@ class Solution {
 ```
 使用map，key为数值，value为数组下标。用HashMap高效的搜索，将复杂度下降为O(n)
 # Review
+花了两个中午看了耗子书推荐的一篇文章[5-hour-rule](https://medium.com/the-mission/the-5-hour-rule-if-youre-not-spending-5-hours-per-week-learning-you-re-being-irresponsible-791c3f18f5e6)，30%单词不认识，能猜个大概。<br>
+开篇就说世界上最忙的人（奥巴马、盖茨、巴菲特）都有时间每天花1小时学习，你还有什么借口不学习。后面阐述了学习和金钱的关系，预计今后高技能的职位越来越多，而低技能的职位会被人工智能取代。不学习将会被淘汰。最后分享了学习的步骤，每天抽出一小时，坚持在这固定的时间内学习，实践学习成果。
+
 # Tip
+本周在公司做了一个数据对接项目，需要定期同步oracle，mysql，sqlserver数据源的数据。我第一次使用了JdbcTemplate，书上看过，但没用过。对于数据对接来讲，还是比较方便的。我将代码发布在[我的github](https://github.com/TaylorWu/jdbc-template-with-two-data-sources)上了。<br>
+这里只提一句，JdbcTemplate查询数据，如果数据为空会抛EmptyResultDataAccessException异常。
+
 # share
 ## 分享本周解决的一个maven打包问题
 dependency的scope是system的，依赖不会传递。例如本地项目的common包pom.xml中有如下配置：
