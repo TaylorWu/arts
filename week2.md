@@ -71,16 +71,16 @@ class Solution {
 # Review
 # Tip
 本周学习了Thymeleaf的基本用法
-####五种表达式
+### 五种表达式
 - Variable Expressions: ${...}，与velocity相同，展示变量
 - Selection Variable Expressions: *{...}，在一个标签的范围内起效，可以转化为$表达式
 - Message Expressions: #{...}，国际化使用，在springboot的resource中需要有message.properties文件
 - Link URL Expressions: @{...}，css，js等可以用这种方式引入
 - Fragment Expressions: ~{...}，写一个碎片，在别的文件中引用。类似java中一个类中调用另一个类的方法
-####基础对象
+### 基础对象
 - \#request
-- \#session等
-####工具对象
+- \#session等<br>
+### 工具对象
 - \#dates
 - \#strings等
 # share
