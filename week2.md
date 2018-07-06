@@ -69,6 +69,7 @@ class Solution {
 ```
 
 # Review
+[People Who Have “Too Many Interests” Are More Likely To Be Successful According To Research](https://medium.com/the-mission/modern-polymath-81f882ce52db)
 # Tip
 本周学习了Thymeleaf的基本用法
 ### 五种表达式
